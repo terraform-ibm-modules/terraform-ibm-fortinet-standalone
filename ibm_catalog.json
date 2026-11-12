@@ -1,0 +1,253 @@
+{
+    "products": [
+        {
+            "label": "Fortinet FortiGate VM NGFW - Single (IBM reseller)",
+            "name": "ibm-fortigate-terraform-payg",
+            "product_kind": "software",
+            "tags": [
+                "security",
+                "ibm_third_party"
+            ],
+            "keywords": [
+                "firewall",
+                "NGFW",
+                "Fortinet",
+                "FortiGate",
+                "Next-Generation Firewall",
+                "Security",
+                "Cybersecurity",
+                "IPS",
+                "UTP",
+                "UTM",
+                "VPN",
+                "Antivirus",
+                "Virtual Firewall",
+                "IBM Reseller"
+            ],
+            "short_description": "FortiGate delivers top-rated cloud security with network and application protection, VPN connectivity, and SD-WAN, available through and supported by IBM.",
+            "long_description": "Fortinet FortiGate Next Generation Firewall (NGFW), available through and supported by IBM, provides comprehensive protection and automated security management for consistent policy enforcement and visibility. FortiGate combines application-aware network security, VPN (SSL or IPSec), SD-WAN, virus and malware protection, IPS, and Web filtering with advanced capabilities including an extreme threat database, vulnerability management, and flow-based inspection. FortiGate NGFW integrates with AI-driven FortiGuard and FortiSandbox services to help protect against known and zero-day threats. For centralized security management and analytics, FortiGate can be used with FortiManager and FortiAnalyzer.",
+            "provider_name": "Fortinet Inc.",
+            "offering_docs_url": "https://cloud.ibm.com/docs/licensed-firewall",
+            "offering_icon_url": "https://fortinet.s3.us.cloud-object-storage.appdomain.cloud/Fortinet.png",
+            "features": [
+                {
+                    "title": "Secure Connectivity",
+                    "description": "Enable scalable remote access VPN (SSL or IPSec) to Azure-based workloads. SD-WAN built in."
+                },
+                {
+                    "title": "Advanced Threat Protection",
+                    "description": "FortiGate identifies and stops threats with powerful application control, malware protection, web filtering, antivirus\nand IPS technology"
+                },
+                {
+                    "title": "Top-rated Performance",
+                    "description": "Top-rated security effectiveness and performance as certified by independent testing. Fortinet is a Leader in the Gartner Magic Quadrant"
+                }
+            ],
+            "flavors": [
+                {
+                    "label": "",
+                    "name": "",
+                    "working_directory": ".",
+                    "licenses": [
+                        {
+                            "id": "eula",
+                            "name": "EUlA",
+                            "url": "https://www.fortinet.com/content/dam/fortinet/assets/legal/EULA.pdf"
+                        }
+                    ],
+                    "compliance": {},
+                    "iam_permissions": [],
+                    "architecture": {
+                        "features": [],
+                        "diagrams": []
+                    },
+                    "release_notes_url": "",
+                    "configuration": [
+                        {
+                            "key": "TF_VERSION",
+                            "type": "string",
+                            "default_value": "1.6.6",
+                            "description": "Terraform version to be used in validation",
+                            "required": true,
+                            "hidden": true,
+                            "virtual": false
+                        },
+                        {
+                            "key": "CATALOG_OFFERING_PLAN_CRN",
+                            "type": "string",
+                            "default_value": "crn:v1:bluemix:public:globalcatalog-collection:global::1082e7d2-5e2f-0a11-a3bc-f88a8e1931fc:plan:sw.1082e7d2-5e2f-0a11-a3bc-f88a8e1931fc.8aca8249-18f1-4da7-bfb7-78fcccc1ed9e-global",
+                            "description": "IBM Cloud Licensed Firewall Plan CRN",
+                            "required": true,
+                            "options": [
+                                {
+                                    "description": "$0.17 per vCPU/hr | $248.20 per month (Estimated)",
+                                    "displayname": "2 vCPU ATP",
+                                    "value": "crn:v1:bluemix:public:globalcatalog-collection:global::1082e7d2-5e2f-0a11-a3bc-f88a8e1931fc:plan:sw.1082e7d2-5e2f-0a11-a3bc-f88a8e1931fc.23def19e-5fea-4259-8bb3-09325c72a75f-global"
+                                },
+                                {
+                                    "description": "$0.17 per vCPU/hr | $992.80 per month (Estimated)",
+                                    "displayname": "8 vCPU ATP",
+                                    "value": "crn:v1:bluemix:public:globalcatalog-collection:global::1082e7d2-5e2f-0a11-a3bc-f88a8e1931fc:plan:sw.1082e7d2-5e2f-0a11-a3bc-f88a8e1931fc.c17d7796-0092-47e6-8d58-48533fba9aa5-global"
+                                },
+                                {
+                                    "description": "$0.44 per vCPU/hr | $642.40 per month (Estimated)",
+                                    "displayname": "2 vCPU UTP",
+                                    "value": "crn:v1:bluemix:public:globalcatalog-collection:global::1082e7d2-5e2f-0a11-a3bc-f88a8e1931fc:plan:sw.1082e7d2-5e2f-0a11-a3bc-f88a8e1931fc.8ce68776-289b-4dc5-84d1-845f7290f22e-global"
+                                },
+                                {
+                                    "description": "$0.20 per vCPU/hr | $1,168.00 per month (Estimated)",
+                                    "displayname": "8 vCPU UTP",
+                                    "value": "crn:v1:bluemix:public:globalcatalog-collection:global::1082e7d2-5e2f-0a11-a3bc-f88a8e1931fc:plan:sw.1082e7d2-5e2f-0a11-a3bc-f88a8e1931fc.8aca8249-18f1-4da7-bfb7-78fcccc1ed9e-global"
+                                },
+                                {
+                                    "description": "$0.21 per vCPU/hr | $2,401.70 per month (Estimated)",
+                                    "displayname": "16 vCPU UTP",
+                                    "value": "crn:v1:bluemix:public:globalcatalog-collection:global::1082e7d2-5e2f-0a11-a3bc-f88a8e1931fc:plan:sw.1082e7d2-5e2f-0a11-a3bc-f88a8e1931fc.419fa63c-e8f5-4065-b676-68cbc11af3e3-global"
+                                },
+                                {
+                                    "description": "$0.24 per vCPU/hr | $1,401.60 per month (Estimated)",
+                                    "displayname": "8 vCPU Enterprise",
+                                    "value": "crn:v1:bluemix:public:globalcatalog-collection:global::1082e7d2-5e2f-0a11-a3bc-f88a8e1931fc:plan:sw.1082e7d2-5e2f-0a11-a3bc-f88a8e1931fc.c9e40066-91d5-470b-b048-d900b79be72f-global"
+                                },
+                                {
+                                    "description": "$0.24 per vCPU/hr | $2,803.20 per month (Estimated)",
+                                    "displayname": "16 vCPU Enterprise",
+                                    "value": "crn:v1:bluemix:public:globalcatalog-collection:global::1082e7d2-5e2f-0a11-a3bc-f88a8e1931fc:plan:sw.1082e7d2-5e2f-0a11-a3bc-f88a8e1931fc.c332973d-f363-4223-b257-a672ced98996-global"
+                                },
+                                {
+                                    "description": "$0.24 per vCPU/hr | $5,606.40 per month (Estimated)",
+                                    "displayname": "32 vCPU Enterprise",
+                                    "value": "crn:v1:bluemix:public:globalcatalog-collection:global::1082e7d2-5e2f-0a11-a3bc-f88a8e1931fc:plan:sw.1082e7d2-5e2f-0a11-a3bc-f88a8e1931fc.e677cc20-3263-445c-aa57-19822204471f-global"
+                                }
+                            ],
+                            "virtual": false
+                        },
+                        {
+                            "key": "CATALOG_OFFERING_VERSION_CRN",
+                            "type": "string",
+                            "default_value": "crn:v1:bluemix:public:globalcatalog-collection:global::1082e7d2-5e2f-0a11-a3bc-f88a8e1931fc:version:f8125c09-f837-4001-96b1-f14a66ff8092-global/c6c3f122-80be-4748-b53c-04ebeeca9755-global",
+                            "description": "IBM Cloud Licensed Firewall Version CRN 8.0.2",
+                            "required": true,
+                            "hidden": true,
+                            "virtual": false
+                        },
+                        {
+                            "key": "CLUSTER_NAME",
+                            "type": "string",
+                            "default_value": "fortigate-terraform",
+                            "description": "Cluster name will be appended by a random Suffix to prevent collisions and allow easier identification.",
+                            "required": true,
+                            "virtual": false
+                        },
+                        {
+                            "key": "IBMCLOUD_API_KEY",
+                            "type": "string",
+                            "default_value": "",
+                            "description": "IBM Gen2 API key.",
+                            "required": true,
+                            "virtual": false
+                        },
+                        {
+                            "key": "REGION",
+                            "type": "string",
+                            "default_value": "us-south",
+                            "description": "Deployment Region",
+                            "required": true,
+                            "virtual": false
+                        },
+                        {
+                            "key": "SSH_PUBLIC_KEY",
+                            "type": "string",
+                            "default_value": "",
+                            "description": "Public ssh ID name. This needs to be pre-created.",
+                            "required": true,
+                            "virtual": false
+                        },
+                        {
+                            "key": "SUBNET1",
+                            "type": "string",
+                            "default_value": "",
+                            "description": "The ID of the Primary, Public Subnet Used for port1 on the FortiGate",
+                            "required": true,
+                            "virtual": false
+                        },
+                        {
+                            "key": "SUBNET2",
+                            "type": "string",
+                            "default_value": "",
+                            "description": "The ID of the Secondary, Private Subnet Used for port2 on the FortiGate",
+                            "required": true,
+                            "virtual": false
+                        },
+                        {
+                            "key": "VPC",
+                            "type": "string",
+                            "default_value": "",
+                            "description": "Name of the VPC you want to deploy a FortiGate into.",
+                            "required": true,
+                            "virtual": false
+                        },
+                        {
+                            "key": "ZONE1",
+                            "type": "string",
+                            "default_value": "us-south-1",
+                            "description": "Deployment Zone.",
+                            "required": true,
+                            "virtual": false
+                        },
+                        {
+                            "key": "RESOURCE_GROUP",
+                            "type": "string",
+                            "default_value": "Default",
+                            "description": "The RESOURCE Group Name to attach to the FortiGate instance.",
+                            "required": true,
+                            "virtual": false
+                        },
+                        {
+                            "key": "USER_DATA",
+                            "type": "string",
+                            "default_value": "user_data.conf",
+                            "description": "The Custom Bootstrap Data file name.",
+                            "required": true,
+                            "hidden": true,
+                            "virtual": false
+                        }
+                    ],
+                    "terraform_version": "",
+                    "outputs": [
+                        {
+                            "key": "Security_Group_Private_ID",
+                            "description": "ID of the private security group attached to port2 (internal)"
+                        },
+                        {
+                            "key": "CATALOG_OFFERING_VERSION_CRN",
+                            "description": "IBM Cloud Licensed Firewall Version CRN used for deployment"
+                        },
+                        {
+                            "key": "CATALOG_OFFERING_PLAN_CRN",
+                            "description": "IBM Cloud Licensed Firewall Plan CRN used for deployment"
+                        },
+                        {
+                            "key": "selected_vsi_profile",
+                            "description": "VSI Profile selected based on the plan CRN mapping"
+                        },
+                        {
+                            "key": "Security_Group_Public_Name",
+                            "description": "Name of the public security group attached to port1 (external)"
+                        },
+                        {
+                            "key": "Security_Group_Private_Name",
+                            "description": "Name of the private security group attached to port2 (internal)"
+                        },
+                        {
+                            "key": "Security_Group_Public_ID",
+                            "description": "ID of the public security group attached to port1 (external)"
+                        }
+                    ],
+                    "scripts": [],
+                    "change_notices": {}
+                }
+            ]
+        }
+    ]
+}
