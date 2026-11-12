@@ -1,0 +1,11 @@
+name: Pipeline
+
+on:
+  workflow_dispatch:
+
+jobs:
+  noop:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Do nothing
+        run: echo "Nothing to run"
