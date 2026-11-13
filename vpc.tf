@@ -121,10 +121,11 @@ resource "ibm_is_virtual_network_interface" "vni-port1" {
 }
 
 resource "ibm_is_virtual_network_interface" "vni-port2" {
-  name                      = "${var.CLUSTER_NAME}-fgt-interface2-${random_string.random_suffix.result}"
-  allow_ip_spoofing         = false
-  auto_delete               = false
-  enable_infrastructure_nat = true
-  security_groups           = [ibm_is_security_group.fgt_sg_private.id]
-  subnet                    = data.ibm_is_subnet.subnet2.id
+  name                          = "${var.CLUSTER_NAME}-fgt-interface2-${random_string.random_suffix.result}"
+  allow_ip_spoofing             = true
+  protocol_state_filtering_mode = "disabled"
+  auto_delete                   = false
+  enable_infrastructure_nat     = true
+  security_groups               = [ibm_is_security_group.fgt_sg_private.id]
+  subnet                        = data.ibm_is_subnet.subnet2.id
 }
