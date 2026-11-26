@@ -221,7 +221,7 @@ The catalog offering CRNs are automatically configured when deploying from the I
    - If issues persist, check IBM Cloud status
 
 4. **Password Empty on First Boot**
-   - This is normal behavior for catalog offerings
-   - The password will be set after the first boot completes
-   - Use the instance ID as the initial password
+   - This is normal behavior for catalog offerings.
+   - The password will be set after the first boot completes.
+   - Use the instance ID as the initial password.
 
